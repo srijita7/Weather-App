@@ -1,0 +1,134 @@
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #000;
+  font-family: "Lobster","sans-serif";
+  background: url('https://source.unsplash.com/random/?weather');
+  font-size: 120%;
+}
+.weather.loading
+{
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+.weather.loading:after
+{
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.weather-info
+{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+  align-items: center;
+  justify-content: flex-start;
+}
+.temp
+{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.card
+{
+  border: none;
+  background: #40B459;
+  opacity: 0.75;
+  box-shadow: inset 5px 5px 20px #CBEAD1,
+                    5px 5px 15px rgba(0,0,0,0.15);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 1em;
+}
+.search
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+input.search-bar
+{
+  font-family: "Lobster","sans-serif";
+  color: #235D3Ad0;
+  padding: 0.5em;
+  width: 80%;
+  outline: none;
+  border: none;
+  border-radius: 18px;
+  height: auto;
+  font-size: 120%;
+  background-color: #0002c;
+  box-shadow: inset 5px 5px 20px #97CADB,
+                    inset -5px -5px 20px rgba(0,0,0,0.15);
+}
+.description
+{
+  text-transform: capitalize;
+}
+
+.search-bar:focus
+{
+  border-style: none;
+    background-color:#E0ECDE;
+}
+button
+{
+  margin-left: 1em;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 100%;
+  height: auto;
+  background-color:#E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6),
+  -9px -9px 16px    rgba(255,255,255, 0.5);
+}
+button:hover {
+  border: none;
+	background-color:#E0ECDE;
+	border-radius: 50%;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6),
+  -9px -9px 16px    rgba(255,255,255, 0.5);
+  cursor: pointer;
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.85);
+		box-shadow: 9px 9px 16px rgb(163,177,198,0.6)
+    -9px -9px 16px    rgba(255,255,255, 0.5);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 9px 9px 16px rgb(163,177,198,0.6)
+    -9px -9px 16px    rgba(255,255,255, 0.5);
+	}
+
+	100% {
+		transform: scale(0.85);
+		box-shadow: 9px 9px 16px rgb(163,177,198,0.6)
+    -9px -9px 16px    rgba(255,255,255, 0.5);
+	}
+}
+h1.temp
+{
+  margin: 0.5px;
+}

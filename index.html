@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="weather_128.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather+Sans:ital,wght@1,300&family=Open+Sans:wght@300&family=Shizuru&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" class="search-bar" value="" placeholder="Enter City">
+        <button type="button" name="button"><img class="search-img img-responsive" src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-search-seo-dreamstale-lineal-dreamstale-7.png"/></button>
+      </div>
+      <div class="weather loading">
+        <h2 class="city">Weather In KOLKATA</h2>
+        <h1 class="temp">34 °C</h1>
+        <div class="weather-info">
+          <img src="" alt="" class="icon">
+          <div class="description">Cloudy</div>
+        </div>
+        <div class="humidity">Humidity : 66 %</div>
+        <div class="wind">Wind Speed : 4.9 km/hr</div>
+      </div>
+    </div>
+    <script src="index.js" defer charset="utf-8"></script>
+  </body>
+</html>
