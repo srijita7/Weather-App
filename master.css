@@ -10,8 +10,25 @@ body
   background: url('https://source.unsplash.com/random/?weather');
   font-size: 120%;
 }
+.or
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-right: 17px;
+}
+.auto
+{
+  color: rgb(8, 75, 14);
+  background-color: aquamarine;
+  border-radius: 1em;
+  width: 100%;
+}
 .weather.loading
 {
+  margin-top: 50px;
   visibility: hidden;
   max-height: 20px;
   position: relative;
@@ -29,7 +46,7 @@ body
 {
   display: flex;
   flex-direction: row;
-  margin-top: 1em;
+  margin-top: 0.5em;
   align-items: center;
   justify-content: flex-start;
 }
@@ -72,7 +89,7 @@ input.search-bar
   border-radius: 18px;
   height: auto;
   font-size: 120%;
-  background-color: #0002c;
+  background-color: #fff;
   box-shadow: inset 5px 5px 20px #97CADB,
                     inset -5px -5px 20px rgba(0,0,0,0.15);
 }
@@ -84,7 +101,7 @@ input.search-bar
 .search-bar:focus
 {
   border-style: none;
-    background-color:#E0ECDE;
+  background-color:#E0ECDE;
 }
 button
 {
@@ -101,7 +118,6 @@ button
 button:hover {
   border: none;
 	background-color:#E0ECDE;
-	border-radius: 50%;
   box-shadow: 9px 9px 16px rgb(163,177,198,0.6),
   -9px -9px 16px    rgba(255,255,255, 0.5);
   cursor: pointer;
