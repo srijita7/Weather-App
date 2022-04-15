@@ -42,6 +42,22 @@ body
   top: 0;
   left: 20px;
 }
+.weather.nf
+{
+  margin-top: 50px;
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+.weather.nf:after
+{
+  visibility: visible;
+  content: "Weather details not found...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
 .weather-info
 {
   display: flex;
